@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UnrealEngine_5_1_0",
+			"Path": "D:\\UOC-Grado_Ingenieria_Informatica\\Semestre_09\\TFG\\Gladiators_Pride\\UnrealEngine_5_1_0\\Source\\UnrealEngine_5_1_0.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UnrealEngine_5_1_0Editor",
+			"Path": "D:\\UOC-Grado_Ingenieria_Informatica\\Semestre_09\\TFG\\Gladiators_Pride\\UnrealEngine_5_1_0\\Source\\UnrealEngine_5_1_0Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

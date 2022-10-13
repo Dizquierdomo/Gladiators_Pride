@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\unrealengine_5_1_0.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealengine_5_1_0editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealeditor\\development\\unrealengine_5_1_0\\definitions.unrealengine_5_1_0.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\unrealengine_5_1_0.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

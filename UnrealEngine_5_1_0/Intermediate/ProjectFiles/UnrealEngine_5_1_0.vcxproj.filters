@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UnrealEngine_5_1_0.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UnrealEngine_5_1_0.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UnrealEngine_5_1_0Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\UnrealEngine_5_1_0">
+      <UniqueIdentifier>{F1DAC8F3-890C-3B80-B9EA-3E3EB26AC754}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0.Build.cs">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0GameModeBase.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0GameModeBase.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
