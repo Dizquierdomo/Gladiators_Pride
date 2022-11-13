@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\inc\\unrealengine_5_1_0\\uht\\gladiatorsword.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealengine_5_1_0\\shipping\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\shipping\\unrealengine_5_1_0\\definitions.unrealengine_5_1_0.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\gladiatorsword.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\weapon.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\inc\\unrealengine_5_1_0\\uht\\weapon.generated.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\inc\\unrealengine_5_1_0\\uht\\gladiatorsword.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

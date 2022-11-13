@@ -11,6 +11,7 @@
     <None Include="..\..\Source\UnrealEngine_5_1_0Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -26,9 +27,45 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{ED49A36C-4FD5-37E5-A2AC-E11BEF4F21CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens">
+      <UniqueIdentifier>{28125F47-4973-377C-9D77-EBC3C72EC856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\HoloLens\Config">
+      <UniqueIdentifier>{D3BF39CB-FA64-39E2-A327-B5021BA69773}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Platforms\HoloLens\Config\HoloLensEngine.ini">
+      <Filter>Platforms\HoloLens\Config</Filter>
+    </None>
     <Filter Include="Source\UnrealEngine_5_1_0">
       <UniqueIdentifier>{F1DAC8F3-890C-3B80-B9EA-3E3EB26AC754}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Gladiator.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\Gladiator.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\GladiatorController.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorController.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Minotaur.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\Minotaur.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
     <None Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0.Build.cs">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </None>
@@ -42,6 +79,12 @@
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0GameModeBase.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Weapon.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\Weapon.h">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClInclude>
   </ItemGroup>

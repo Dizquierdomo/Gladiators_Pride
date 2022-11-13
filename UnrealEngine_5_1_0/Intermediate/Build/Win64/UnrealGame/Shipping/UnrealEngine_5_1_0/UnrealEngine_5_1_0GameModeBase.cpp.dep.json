@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\unrealengine_5_1_0gamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealengine_5_1_0\\shipping\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\shipping\\unrealengine_5_1_0\\definitions.unrealengine_5_1_0.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\source\\unrealengine_5_1_0\\unrealengine_5_1_0gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\uoc-grado_ingenieria_informatica\\semestre_09\\tfg\\gladiators_pride\\unrealengine_5_1_0\\intermediate\\build\\win64\\unrealgame\\inc\\unrealengine_5_1_0\\uht\\unrealengine_5_1_0gamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
