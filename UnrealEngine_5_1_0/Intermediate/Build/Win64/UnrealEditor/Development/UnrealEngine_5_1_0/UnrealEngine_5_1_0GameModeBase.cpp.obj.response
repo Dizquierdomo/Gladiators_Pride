@@ -1,18 +1,16 @@
 D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Source\UnrealEngine_5_1_0\UnrealEngine_5_1_0GameModeBase.cpp
 /I .
-/I D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEngine_5_1_0\UHT
-/I D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Source
-/I Runtime
-/I Runtime\TraceLog\Public
-/I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
-/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
+/I Runtime
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
+/I Runtime\TraceLog\Public
+/I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT
 /I Runtime\CoreOnline\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
+/I Runtime\CoreUObject\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\UHT
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -271,6 +269,8 @@ D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngin
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
+/I D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEngine_5_1_0\UHT
+/I D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Source
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source

@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Meshes/Gladiator_Sword_Mesh.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Gladiator_Sword_BP.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Meshes/Gladiator_Mesh.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Gladiator_BP.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Animations/Gladiator_SwordAttack.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Attack.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Arena.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Gladiator_ABP.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Skeletons/Gladiator_Skeleton.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Levels/Arena.umap",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Physics/Gladiator_PhysicsAsset.uasset"
+			]
+		}
+	]
+}
