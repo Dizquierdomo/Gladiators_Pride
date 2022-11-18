@@ -80,9 +80,9 @@ void EmptyLinkFunctionForGeneratedCodeGladiatorController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGladiatorController, AGladiatorController::StaticClass, TEXT("AGladiatorController"), &Z_Registration_Info_UClass_AGladiatorController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiatorController), 2980903005U) },
+		{ Z_Construct_UClass_AGladiatorController, AGladiatorController::StaticClass, TEXT("AGladiatorController"), &Z_Registration_Info_UClass_AGladiatorController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiatorController), 578399533U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_897890647(TEXT("/Script/UnrealEngine_5_1_0"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_1480194595(TEXT("/Script/UnrealEngine_5_1_0"),
 		Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
