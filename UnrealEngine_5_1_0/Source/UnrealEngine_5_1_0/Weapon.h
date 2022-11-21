@@ -20,18 +20,11 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	class UAnimSequence* Animation;
-/*
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UStaticMesh* Mesh;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UBoxComponent* Collision;
-*/
 public:	
 	// Sets default values for this actor's properties
 	AWeapon();
-	//AWeapon(int AtkValue, int EnergyCost, class UAnimSequence* Animation, class UStaticMesh* Mesh, class UBoxComponent* Collision);
-
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

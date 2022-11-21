@@ -41,17 +41,21 @@ class UNREALENGINE_5_1_0_API AGladiator : public ACharacter {
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
 		class AWeapon* Weapon;
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+private:
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
 		int MaxHealthPoints;
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
 		int HealthPoints;
 		
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-		int MaxEnergyPoint;
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
+		int MaxEnergyPoints;
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-		int EnergyPoint;
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
+		int EnergyPoints;
+
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
+		float EnergyRecoveryPerSecond;
 
 	AGladiator();
 
@@ -80,5 +84,36 @@ class UNREALENGINE_5_1_0_API AGladiator : public ACharacter {
 		UFUNCTION(BlueprintCallable)
 		float WeaponAttack();
 
+		UFUNCTION(BlueprintCallable)
 		void FocusCameraOnEnemy();
+
+		UFUNCTION(BlueprintCallable)
+		void SetMaxHealthPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetMaxHealthPoints();
+
+		UFUNCTION(BlueprintCallable)
+		void SetHealthPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetHealthPoints();
+
+		UFUNCTION(BlueprintCallable)
+		void SetMaxEnergyPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetMaxEnergyPoints();
+
+		UFUNCTION(BlueprintCallable)
+		void SetEnergyPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetEnergyPoints();
+
+		UFUNCTION(BlueprintCallable)
+		void SetEnergyRecoveryPerSecond(float value);
+
+		UFUNCTION(BlueprintCallable)
+		float GetEnergyRecoveryPerSecond();
 };

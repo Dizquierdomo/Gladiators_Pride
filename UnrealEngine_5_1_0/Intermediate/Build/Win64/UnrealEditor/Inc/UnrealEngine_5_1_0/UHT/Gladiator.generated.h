@@ -18,6 +18,17 @@ class AActor;
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_SPARSE_DATA
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execGetEnergyPoints); \
+	DECLARE_FUNCTION(execSetEnergyPoints); \
+	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execGetHealthPoints); \
+	DECLARE_FUNCTION(execSetHealthPoints); \
+	DECLARE_FUNCTION(execGetMaxHealthPoints); \
+	DECLARE_FUNCTION(execSetMaxHealthPoints); \
+	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \
@@ -27,6 +38,17 @@ class AActor;
 
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execGetEnergyPoints); \
+	DECLARE_FUNCTION(execSetEnergyPoints); \
+	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execGetHealthPoints); \
+	DECLARE_FUNCTION(execSetHealthPoints); \
+	DECLARE_FUNCTION(execGetMaxHealthPoints); \
+	DECLARE_FUNCTION(execSetMaxHealthPoints); \
+	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \

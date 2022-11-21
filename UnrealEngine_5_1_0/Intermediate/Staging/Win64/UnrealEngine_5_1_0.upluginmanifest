@@ -247,8 +247,8 @@
 			"Descriptor": 
 			{
 				"FileVersion": 3,
-				"Version": 13,
-				"VersionName": "2022.0.7",
+				"Version": 15,
+				"VersionName": "2022.1.0",
 				"FriendlyName": "Bridge",
 				"Description": "Megascans Link for Quixel Bridge.",
 				"Category": "Editor",
@@ -1395,75 +1395,6 @@
 						"Name": "Iris",
 						"Type": "Runtime",
 						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Experimental/MotoSynth/MotoSynth.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1",
-				"FriendlyName": "MotoSynth",
-				"Description": "An experimental granular vehicle engine. Intended to explore and demonstrate potential capabilities. Not supported.",
-				"Category": "Audio",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"IsExperimentalVersion": true,
-				"Modules": [
-					{
-						"Name": "MotoSynth",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					},
-					{
-						"Name": "MotoSynthEditor",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Experimental/MotorSimOutputMotoSynth/MotorSimOutputMotoSynth.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1",
-				"FriendlyName": "MotorSimOutputMotoSynth",
-				"Description": "A MotoSim Output component using MotoSynth.",
-				"Category": "Audio",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
-				"CanContainContent": true,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "MotorSimOutputMotoSynth",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "AudioMotorSim",
-						"Enabled": true
-					},
-					{
-						"Name": "MotoSynth",
-						"Enabled": true
 					}
 				]
 			}
@@ -2891,38 +2822,6 @@
 			}
 		},
 		{
-			"File": "../../../Engine/Plugins/Runtime/AudioMotorSim/AudioMotorSim.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "AudioWidgets",
-				"Description": "Compositional method for simulating audio for vehicles.",
-				"Category": "Audio",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": false,
-				"IsBetaVersion": true,
-				"IsExperimentalVersion": true,
-				"Modules": [
-					{
-						"Name": "AudioMotorSim",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					},
-					{
-						"Name": "AudioMotorSimStandardComponents",
-						"Type": "Runtime",
-						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/Runtime/AudioSynesthesia/AudioSynesthesia.uplugin",
 			"Descriptor": 
 			{
@@ -2955,6 +2854,32 @@
 						"Name": "AudioSynesthesiaEditor",
 						"Type": "Editor",
 						"LoadingPhase": "PostDefault"
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Runtime/AudioWidgets/AudioWidgets.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "AudioWidgets",
+				"Description": "Collection of widgets tailored to interacting with audio-related data and systems.",
+				"Category": "Audio",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": true,
+				"IsBetaVersion": true,
+				"Modules": [
+					{
+						"Name": "AudioWidgets",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
 					}
 				]
 			}
@@ -3228,6 +3153,77 @@
 			}
 		},
 		{
+			"File": "../../../Engine/Plugins/Runtime/Metasound/Metasound.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "MetaSound",
+				"Description": "A high-performance audio system that enables sound designers to have complete control over audio DSP graph generation of sound sources, via sample-accurate control and modulation of sound using audio parameters and audio events from game data and Blueprints",
+				"Category": "Audio",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": true,
+				"CanContainContent": true,
+				"IsBetaVersion": true,
+				"Modules": [
+					{
+						"Name": "MetasoundGraphCore",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundGenerator",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundFrontend",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundStandardNodes",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundEngine",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundEngineTest",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "MetasoundEditor",
+						"Type": "UncookedOnly",
+						"LoadingPhase": "PreDefault"
+					}
+				],
+				"Plugins": [
+					{
+						"Name": "AudioWidgets",
+						"Enabled": true
+					},
+					{
+						"Name": "AudioSynesthesia",
+						"Enabled": true
+					},
+					{
+						"Name": "WaveTable",
+						"Enabled": true
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/Runtime/MobilePatchingUtils/MobilePatchingUtils.uplugin",
 			"Descriptor": 
 			{
@@ -3446,6 +3442,38 @@
 					{
 						"Name": "AudioSynesthesia",
 						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/Runtime/WaveTable/WaveTable.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Wave Tables",
+				"Description": "Default implementation of WaveTable support within the Unreal Audio Engine.",
+				"Category": "Audio",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": true,
+				"IsBetaVersion": true,
+				"Modules": [
+					{
+						"Name": "WaveTable",
+						"Type": "Runtime",
+						"LoadingPhase": "Default"
+					},
+					{
+						"Name": "WaveTableEditor",
+						"Type": "Editor",
+						"LoadingPhase": "PostEngineInit"
 					}
 				]
 			}

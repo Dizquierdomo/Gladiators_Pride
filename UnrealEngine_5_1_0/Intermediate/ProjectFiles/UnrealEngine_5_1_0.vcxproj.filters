@@ -54,12 +54,6 @@
     <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorController.h">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.cpp">
-      <Filter>Source\UnrealEngine_5_1_0</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.h">
-      <Filter>Source\UnrealEngine_5_1_0</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Minotaur.cpp">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClCompile>

@@ -15,8 +15,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
 
-
-
 // Sets default values
 AGladiator::AGladiator() {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -29,6 +27,12 @@ AGladiator::AGladiator() {
 	// Create a follow camera
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(CameraArm, USpringArmComponent::SocketName);
+
+	SetMaxHealthPoints(1000);
+	SetHealthPoints(1000);
+	SetMaxEnergyPoints(100);
+	SetEnergyPoints(100);
+	SetEnergyRecoveryPerSecond(5);
 
 	IsEnemyTargeted = false;
 }
@@ -122,16 +126,84 @@ void AGladiator::FocusCameraOnEnemy() {
 }
 
 float AGladiator::WeaponAttack() {
-	if (Weapon != nullptr) {
-		USkeletalMeshComponent* GladiatorMesh = GetMesh();
-		APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-		//AWeapon* weapon = Cast<AWeapon, AActor>(weaponActor);
+	float aux = 0;
 
-		GladiatorMesh->PlayAnimation(Weapon->Animation, false);
-		//DisableInput(PlayerController);
-		
-		//EnableInput(PlayerController);			
-	}	
-	
-	return (Weapon->Animation->GetPlayLength() / (float)Weapon->Animation->RateScale);
+	if (Weapon != nullptr) {
+		if (this->GetEnergyPoints() >= Weapon->EnergyCost) {
+			USkeletalMeshComponent* GladiatorMesh = GetMesh();
+
+			SetEnergyPoints((GetEnergyPoints() - Weapon->EnergyCost));
+
+			GladiatorMesh->PlayAnimation(Weapon->Animation, false);
+
+			aux = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
+		} else {
+			aux = -1;
+		}
+	} 
+	return aux;
+}
+
+void AGladiator::SetMaxHealthPoints(int value) {
+	if (value < 0) {
+		this->MaxHealthPoints = 0;
+	} else {
+		this->MaxHealthPoints = value;
+	}
+}
+
+int AGladiator::GetMaxHealthPoints() {
+	return this->MaxHealthPoints;
+}
+
+void AGladiator::SetHealthPoints(int value) {
+	if (value < 0) {
+		this->HealthPoints = 0;
+	} else if (value > GetMaxHealthPoints()) {
+		this->HealthPoints = GetMaxHealthPoints();
+	} else {
+		this->HealthPoints = value;
+	}
+}
+
+int AGladiator::GetHealthPoints() {
+	return this->HealthPoints;
+}
+
+void AGladiator::SetMaxEnergyPoints(int value) {
+	if (value < 0) {
+		this->MaxEnergyPoints = 0;
+	} else {
+		this->MaxEnergyPoints = value;
+	}
+}
+
+int AGladiator::GetMaxEnergyPoints() {
+	return this->MaxEnergyPoints;
+}
+
+void AGladiator::SetEnergyPoints(int value) {
+	if (value < 0) {
+		this->EnergyPoints = 0;
+	} else if (value > GetMaxEnergyPoints()) {
+		this->EnergyPoints = GetMaxEnergyPoints();
+	} else {
+		this->EnergyPoints = value;
+	}
+}
+
+int AGladiator::GetEnergyPoints() {
+	return this->EnergyPoints;
+}
+
+void AGladiator::SetEnergyRecoveryPerSecond(float value) {
+	if (value > 0) {
+		this->EnergyRecoveryPerSecond = value;
+	} else {
+		this->EnergyRecoveryPerSecond = 0;
+	}
+}
+
+float AGladiator::GetEnergyRecoveryPerSecond() {
+	return this->EnergyRecoveryPerSecond;
 }

@@ -37,7 +37,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiatorController() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiatorController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "GladiatorController.h" },
 		{ "ModuleRelativePath", "GladiatorController.h" },
@@ -80,9 +79,9 @@ void EmptyLinkFunctionForGeneratedCodeGladiatorController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGladiatorController, AGladiatorController::StaticClass, TEXT("AGladiatorController"), &Z_Registration_Info_UClass_AGladiatorController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiatorController), 578399533U) },
+		{ Z_Construct_UClass_AGladiatorController, AGladiatorController::StaticClass, TEXT("AGladiatorController"), &Z_Registration_Info_UClass_AGladiatorController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiatorController), 228696875U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_1480194595(TEXT("/Script/UnrealEngine_5_1_0"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_2348056483(TEXT("/Script/UnrealEngine_5_1_0"),
 		Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_GladiatorController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
