@@ -10,7 +10,6 @@
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Meshes/Gladiator_Mesh.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Gladiator_BP.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Animations/Gladiator_SwordAttack.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Attack.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Arena.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Gladiator_ABP.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Skeletons/Gladiator_Skeleton.uasset",
@@ -24,16 +23,21 @@
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Arena_Context.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Attack_Input.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveForward_Input.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveForward.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveRight_Input.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveRight.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraX_Input.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraX.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraY_Input.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraY.uasset",
 				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/TargetEnemy_Input.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/TargetEnemy.uasset",
-				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Widgets/GladiatorStatus.uasset"
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Widgets/GladiatorStatus.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Materials/Floor_Sand.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Widgets/EnemyHalthBar.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Blueprints/Minotaur_BP.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Widgets/EnemyHealthBar.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/Attack.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveForward.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/MoveRight.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraX.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/RotateCameraY.uasset",
+				"D:/UOC-Grado_Ingenieria_Informatica/Semestre_09/TFG/Gladiators_Pride/UnrealEngine_5_1_0/Content/Inputs/TargetEnemy.uasset"
 			]
 		}
 	]

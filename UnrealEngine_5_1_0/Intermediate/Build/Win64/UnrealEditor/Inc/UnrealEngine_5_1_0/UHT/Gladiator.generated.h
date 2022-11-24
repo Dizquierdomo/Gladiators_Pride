@@ -10,6 +10,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+struct FAttackInfo;
 #ifdef UNREALENGINE_5_1_0_Gladiator_generated_h
 #error "Gladiator.generated.h already included, missing '#pragma once' in Gladiator.h"
 #endif
@@ -24,10 +25,6 @@ class AActor;
 	DECLARE_FUNCTION(execSetEnergyPoints); \
 	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
 	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
-	DECLARE_FUNCTION(execGetHealthPoints); \
-	DECLARE_FUNCTION(execSetHealthPoints); \
-	DECLARE_FUNCTION(execGetMaxHealthPoints); \
-	DECLARE_FUNCTION(execSetMaxHealthPoints); \
 	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
 	DECLARE_FUNCTION(execTargetEnemy); \
@@ -44,10 +41,6 @@ class AActor;
 	DECLARE_FUNCTION(execSetEnergyPoints); \
 	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
 	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
-	DECLARE_FUNCTION(execGetHealthPoints); \
-	DECLARE_FUNCTION(execSetHealthPoints); \
-	DECLARE_FUNCTION(execGetMaxHealthPoints); \
-	DECLARE_FUNCTION(execSetMaxHealthPoints); \
 	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
 	DECLARE_FUNCTION(execTargetEnemy); \
@@ -62,7 +55,7 @@ private: \
 	static void StaticRegisterNativesAGladiator(); \
 	friend struct Z_Construct_UClass_AGladiator_Statics; \
 public: \
-	DECLARE_CLASS(AGladiator, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AGladiator, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AGladiator)
 
 
@@ -71,7 +64,7 @@ private: \
 	static void StaticRegisterNativesAGladiator(); \
 	friend struct Z_Construct_UClass_AGladiator_Statics; \
 public: \
-	DECLARE_CLASS(AGladiator, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AGladiator, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AGladiator)
 
 

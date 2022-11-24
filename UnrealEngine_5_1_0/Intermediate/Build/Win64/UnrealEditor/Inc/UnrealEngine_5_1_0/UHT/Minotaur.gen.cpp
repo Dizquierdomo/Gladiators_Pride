@@ -9,7 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMinotaur() {}
 // Cross Module References
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AGameCharacter();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AMinotaur();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AMinotaur_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_UnrealEngine_5_1_0();
@@ -32,7 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeMinotaur() {}
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AMinotaur_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ACharacter,
+		(UObject* (*)())Z_Construct_UClass_AGameCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_UnrealEngine_5_1_0,
 	};
 #if WITH_METADATA
@@ -79,9 +79,9 @@ void EmptyLinkFunctionForGeneratedCodeMinotaur() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Minotaur_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMinotaur, AMinotaur::StaticClass, TEXT("AMinotaur"), &Z_Registration_Info_UClass_AMinotaur, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinotaur), 1260011859U) },
+		{ Z_Construct_UClass_AMinotaur, AMinotaur::StaticClass, TEXT("AMinotaur"), &Z_Registration_Info_UClass_AMinotaur, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMinotaur), 668081090U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Minotaur_h_3270063903(TEXT("/Script/UnrealEngine_5_1_0"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Minotaur_h_3758052664(TEXT("/Script/UnrealEngine_5_1_0"),
 		Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Minotaur_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Minotaur_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

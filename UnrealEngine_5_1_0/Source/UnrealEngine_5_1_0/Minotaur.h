@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameCharacter.h"
 #include "Minotaur.generated.h"
 
 UCLASS()
-class UNREALENGINE_5_1_0_API AMinotaur : public ACharacter
+class UNREALENGINE_5_1_0_API AMinotaur : public AGameCharacter
 {
 	GENERATED_BODY()
 

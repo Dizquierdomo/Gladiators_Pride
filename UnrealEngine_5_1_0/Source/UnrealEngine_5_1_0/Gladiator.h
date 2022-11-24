@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "GameCharacter.h"
 #include "Gladiator.generated.h"
 
 UCLASS()
-class UNREALENGINE_5_1_0_API AGladiator : public ACharacter {
+class UNREALENGINE_5_1_0_API AGladiator : public AGameCharacter {
 	GENERATED_BODY()
 
 	public:	
@@ -41,13 +41,7 @@ class UNREALENGINE_5_1_0_API AGladiator : public ACharacter {
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
 		class AWeapon* Weapon;
 
-private:
-		UPROPERTY(VisibleAnywhere, Category = "Stats")
-		int MaxHealthPoints;
-
-		UPROPERTY(VisibleAnywhere, Category = "Stats")
-		int HealthPoints;
-		
+private:		
 		UPROPERTY(VisibleAnywhere, Category = "Stats")
 		int MaxEnergyPoints;
 
@@ -82,22 +76,10 @@ private:
 		void TargetEnemy();
 				
 		UFUNCTION(BlueprintCallable)
-		float WeaponAttack();
+		FAttackInfo WeaponAttack();
 
 		UFUNCTION(BlueprintCallable)
 		void FocusCameraOnEnemy();
-
-		UFUNCTION(BlueprintCallable)
-		void SetMaxHealthPoints(int value);
-
-		UFUNCTION(BlueprintCallable)
-		int GetMaxHealthPoints();
-
-		UFUNCTION(BlueprintCallable)
-		void SetHealthPoints(int value);
-
-		UFUNCTION(BlueprintCallable)
-		int GetHealthPoints();
 
 		UFUNCTION(BlueprintCallable)
 		void SetMaxEnergyPoints(int value);

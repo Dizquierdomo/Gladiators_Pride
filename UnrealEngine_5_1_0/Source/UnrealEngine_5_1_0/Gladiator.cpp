@@ -14,6 +14,7 @@
 #include "Weapon.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
+#include "AttackInfo.h"
 
 // Sets default values
 AGladiator::AGladiator() {
@@ -125,8 +126,10 @@ void AGladiator::FocusCameraOnEnemy() {
 	}
 }
 
-float AGladiator::WeaponAttack() {
-	float aux = 0;
+FAttackInfo AGladiator::WeaponAttack() {
+	FAttackInfo aux;
+
+	aux.AtkTime = 0;
 
 	if (Weapon != nullptr) {
 		if (this->GetEnergyPoints() >= Weapon->EnergyCost) {
@@ -136,38 +139,13 @@ float AGladiator::WeaponAttack() {
 
 			GladiatorMesh->PlayAnimation(Weapon->Animation, false);
 
-			aux = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
+			aux.AtkTime = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
+			aux.AtkID = Weapon->GenerateAttackID();
 		} else {
-			aux = -1;
+			aux.AtkTime = -1;
 		}
 	} 
 	return aux;
-}
-
-void AGladiator::SetMaxHealthPoints(int value) {
-	if (value < 0) {
-		this->MaxHealthPoints = 0;
-	} else {
-		this->MaxHealthPoints = value;
-	}
-}
-
-int AGladiator::GetMaxHealthPoints() {
-	return this->MaxHealthPoints;
-}
-
-void AGladiator::SetHealthPoints(int value) {
-	if (value < 0) {
-		this->HealthPoints = 0;
-	} else if (value > GetMaxHealthPoints()) {
-		this->HealthPoints = GetMaxHealthPoints();
-	} else {
-		this->HealthPoints = value;
-	}
-}
-
-int AGladiator::GetHealthPoints() {
-	return this->HealthPoints;
 }
 
 void AGladiator::SetMaxEnergyPoints(int value) {

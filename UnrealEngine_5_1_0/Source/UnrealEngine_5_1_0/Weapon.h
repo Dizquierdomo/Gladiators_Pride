@@ -21,6 +21,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	class UAnimSequence* Animation;
 
+private:
+	UPROPERTY(VisibleAnywhere, Category = "AttackInfo")
+	int AttackID;
+
 public:	
 	// Sets default values for this actor's properties
 	AWeapon();
@@ -32,5 +36,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+		
+	int GenerateAttackID();
 
+	UFUNCTION(BlueprintCallable)
+	int GetAttackID();
 };

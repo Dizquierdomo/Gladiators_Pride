@@ -6,17 +6,19 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "UnrealEngine_5_1_0/Gladiator.h"
+#include "UnrealEngine_5_1_0/AttackInfo.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AGameCharacter();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AGladiator();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AGladiator_NoRegister();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AMinotaur_NoRegister();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
+	UNREALENGINE_5_1_0_API UScriptStruct* Z_Construct_UScriptStruct_FAttackInfo();
 	UPackage* Z_Construct_UPackage__Script_UnrealEngine_5_1_0();
 // End Cross Module References
 	DEFINE_FUNCTION(AGladiator::execGetEnergyRecoveryPerSecond)
@@ -64,36 +66,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		P_THIS->SetMaxEnergyPoints(Z_Param_value);
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(AGladiator::execGetHealthPoints)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetHealthPoints();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(AGladiator::execSetHealthPoints)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_value);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetHealthPoints(Z_Param_value);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(AGladiator::execGetMaxHealthPoints)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(int32*)Z_Param__Result=P_THIS->GetMaxHealthPoints();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(AGladiator::execSetMaxHealthPoints)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_value);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetMaxHealthPoints(Z_Param_value);
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(AGladiator::execFocusCameraOnEnemy)
 	{
 		P_FINISH;
@@ -105,7 +77,7 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->WeaponAttack();
+		*(FAttackInfo*)Z_Param__Result=P_THIS->WeaponAttack();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AGladiator::execTargetEnemy)
@@ -147,16 +119,12 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 			{ "ForwardMove", &AGladiator::execForwardMove },
 			{ "GetEnergyPoints", &AGladiator::execGetEnergyPoints },
 			{ "GetEnergyRecoveryPerSecond", &AGladiator::execGetEnergyRecoveryPerSecond },
-			{ "GetHealthPoints", &AGladiator::execGetHealthPoints },
 			{ "GetMaxEnergyPoints", &AGladiator::execGetMaxEnergyPoints },
-			{ "GetMaxHealthPoints", &AGladiator::execGetMaxHealthPoints },
 			{ "RightMove", &AGladiator::execRightMove },
 			{ "SetEnemyInTargetRange", &AGladiator::execSetEnemyInTargetRange },
 			{ "SetEnergyPoints", &AGladiator::execSetEnergyPoints },
 			{ "SetEnergyRecoveryPerSecond", &AGladiator::execSetEnergyRecoveryPerSecond },
-			{ "SetHealthPoints", &AGladiator::execSetHealthPoints },
 			{ "SetMaxEnergyPoints", &AGladiator::execSetMaxEnergyPoints },
-			{ "SetMaxHealthPoints", &AGladiator::execSetMaxHealthPoints },
 			{ "TargetEnemy", &AGladiator::execTargetEnemy },
 			{ "WeaponAttack", &AGladiator::execWeaponAttack },
 		};
@@ -282,38 +250,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics
-	{
-		struct Gladiator_eventGetHealthPoints_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventGetHealthPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGladiator, nullptr, "GetHealthPoints", nullptr, nullptr, sizeof(Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::Gladiator_eventGetHealthPoints_Parms), Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGladiator_GetHealthPoints()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGladiator_GetHealthPoints_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AGladiator_GetMaxEnergyPoints_Statics
 	{
 		struct Gladiator_eventGetMaxEnergyPoints_Parms
@@ -343,38 +279,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGladiator_GetMaxEnergyPoints_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics
-	{
-		struct Gladiator_eventGetMaxHealthPoints_Parms
-		{
-			int32 ReturnValue;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventGetMaxHealthPoints_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGladiator, nullptr, "GetMaxHealthPoints", nullptr, nullptr, sizeof(Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::Gladiator_eventGetMaxHealthPoints_Parms), Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGladiator_GetMaxHealthPoints()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGladiator_GetMaxHealthPoints_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -508,38 +412,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics
-	{
-		struct Gladiator_eventSetHealthPoints_Parms
-		{
-			int32 value;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_value;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventSetHealthPoints_Parms, value), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::NewProp_value,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGladiator, nullptr, "SetHealthPoints", nullptr, nullptr, sizeof(Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::Gladiator_eventSetHealthPoints_Parms), Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGladiator_SetHealthPoints()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGladiator_SetHealthPoints_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AGladiator_SetMaxEnergyPoints_Statics
 	{
 		struct Gladiator_eventSetMaxEnergyPoints_Parms
@@ -572,38 +444,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics
-	{
-		struct Gladiator_eventSetMaxHealthPoints_Parms
-		{
-			int32 value;
-		};
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_value;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventSetMaxHealthPoints_Parms, value), METADATA_PARAMS(nullptr, 0) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::NewProp_value,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGladiator, nullptr, "SetMaxHealthPoints", nullptr, nullptr, sizeof(Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::Gladiator_eventSetMaxHealthPoints_Parms), Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGladiator_SetMaxHealthPoints()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AGladiator_SetMaxHealthPoints_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_AGladiator_TargetEnemy_Statics
 	{
 #if WITH_METADATA
@@ -630,16 +470,16 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 	{
 		struct Gladiator_eventWeaponAttack_Parms
 		{
-			float ReturnValue;
+			FAttackInfo ReturnValue;
 		};
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventWeaponAttack_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventWeaponAttack_Parms, ReturnValue), Z_Construct_UScriptStruct_FAttackInfo, METADATA_PARAMS(nullptr, 0) }; // 384828676
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue,
 	};
@@ -716,14 +556,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Weapon;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealthPoints_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxHealthPoints;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_HealthPoints_MetaData[];
-#endif
-		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_HealthPoints;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxEnergyPoints_MetaData[];
 #endif
 		static const UECodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxEnergyPoints;
@@ -740,7 +572,7 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AGladiator_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ACharacter,
+		(UObject* (*)())Z_Construct_UClass_AGameCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_UnrealEngine_5_1_0,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGladiator_Statics::FuncInfo[] = {
@@ -748,18 +580,14 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		{ &Z_Construct_UFunction_AGladiator_ForwardMove, "ForwardMove" }, // 4096657762
 		{ &Z_Construct_UFunction_AGladiator_GetEnergyPoints, "GetEnergyPoints" }, // 1053769215
 		{ &Z_Construct_UFunction_AGladiator_GetEnergyRecoveryPerSecond, "GetEnergyRecoveryPerSecond" }, // 4016117281
-		{ &Z_Construct_UFunction_AGladiator_GetHealthPoints, "GetHealthPoints" }, // 2568596600
 		{ &Z_Construct_UFunction_AGladiator_GetMaxEnergyPoints, "GetMaxEnergyPoints" }, // 2154167446
-		{ &Z_Construct_UFunction_AGladiator_GetMaxHealthPoints, "GetMaxHealthPoints" }, // 199887066
 		{ &Z_Construct_UFunction_AGladiator_RightMove, "RightMove" }, // 3127631509
 		{ &Z_Construct_UFunction_AGladiator_SetEnemyInTargetRange, "SetEnemyInTargetRange" }, // 2276387788
 		{ &Z_Construct_UFunction_AGladiator_SetEnergyPoints, "SetEnergyPoints" }, // 2062051270
 		{ &Z_Construct_UFunction_AGladiator_SetEnergyRecoveryPerSecond, "SetEnergyRecoveryPerSecond" }, // 3473871134
-		{ &Z_Construct_UFunction_AGladiator_SetHealthPoints, "SetHealthPoints" }, // 1186700228
 		{ &Z_Construct_UFunction_AGladiator_SetMaxEnergyPoints, "SetMaxEnergyPoints" }, // 3202803108
-		{ &Z_Construct_UFunction_AGladiator_SetMaxHealthPoints, "SetMaxHealthPoints" }, // 3829420119
 		{ &Z_Construct_UFunction_AGladiator_TargetEnemy, "TargetEnemy" }, // 1266959365
-		{ &Z_Construct_UFunction_AGladiator_WeaponAttack, "WeaponAttack" }, // 1179484655
+		{ &Z_Construct_UFunction_AGladiator_WeaponAttack, "WeaponAttack" }, // 1857198879
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiator_Statics::Class_MetaDataParams[] = {
@@ -861,20 +689,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGladiator_Statics::NewProp_Weapon = { "Weapon", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGladiator, Weapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGladiator_Statics::NewProp_Weapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGladiator_Statics::NewProp_Weapon_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiator_Statics::NewProp_MaxHealthPoints_MetaData[] = {
-		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGladiator_Statics::NewProp_MaxHealthPoints = { "MaxHealthPoints", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGladiator, MaxHealthPoints), METADATA_PARAMS(Z_Construct_UClass_AGladiator_Statics::NewProp_MaxHealthPoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGladiator_Statics::NewProp_MaxHealthPoints_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiator_Statics::NewProp_HealthPoints_MetaData[] = {
-		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "Gladiator.h" },
-	};
-#endif
-	const UECodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGladiator_Statics::NewProp_HealthPoints = { "HealthPoints", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AGladiator, HealthPoints), METADATA_PARAMS(Z_Construct_UClass_AGladiator_Statics::NewProp_HealthPoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGladiator_Statics::NewProp_HealthPoints_MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiator_Statics::NewProp_MaxEnergyPoints_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "Gladiator.h" },
@@ -906,8 +720,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_EnemyInTargetRange,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_Target,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_Weapon,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_MaxHealthPoints,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_HealthPoints,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_MaxEnergyPoints,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_EnergyPoints,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGladiator_Statics::NewProp_EnergyRecoveryPerSecond,
@@ -949,9 +761,9 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGladiator, AGladiator::StaticClass, TEXT("AGladiator"), &Z_Registration_Info_UClass_AGladiator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiator), 4156570352U) },
+		{ Z_Construct_UClass_AGladiator, AGladiator::StaticClass, TEXT("AGladiator"), &Z_Registration_Info_UClass_AGladiator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiator), 1037800377U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_721064118(TEXT("/Script/UnrealEngine_5_1_0"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_3585079859(TEXT("/Script/UnrealEngine_5_1_0"),
 		Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
