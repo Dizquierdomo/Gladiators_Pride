@@ -10,7 +10,6 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
-struct FAttackInfo;
 #ifdef UNREALENGINE_5_1_0_Gladiator_generated_h
 #error "Gladiator.generated.h already included, missing '#pragma once' in Gladiator.h"
 #endif

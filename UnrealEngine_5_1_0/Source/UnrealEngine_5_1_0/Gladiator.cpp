@@ -126,23 +126,23 @@ void AGladiator::FocusCameraOnEnemy() {
 	}
 }
 
-FAttackInfo AGladiator::WeaponAttack() {
-	FAttackInfo aux;
+float AGladiator::WeaponAttack() {
+	float aux;
 
-	aux.AtkTime = 0;
+	aux = 0;
 
 	if (Weapon != nullptr) {
-		if (this->GetEnergyPoints() >= Weapon->EnergyCost) {
+		if ((this->GetEnergyPoints() >= Weapon->EnergyCost) && (Weapon->Animation != nullptr)) {
 			USkeletalMeshComponent* GladiatorMesh = GetMesh();
 
 			SetEnergyPoints((GetEnergyPoints() - Weapon->EnergyCost));
 
 			GladiatorMesh->PlayAnimation(Weapon->Animation, false);
 
-			aux.AtkTime = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
-			aux.AtkID = Weapon->GenerateAttackID();
+			aux = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
+			Weapon->GenerateAttackID();
 		} else {
-			aux.AtkTime = -1;
+			aux = -1;
 		}
 	} 
 	return aux;

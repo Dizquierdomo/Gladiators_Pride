@@ -76,7 +76,7 @@ private:
 		void TargetEnemy();
 				
 		UFUNCTION(BlueprintCallable)
-		FAttackInfo WeaponAttack();
+		float WeaponAttack();
 
 		UFUNCTION(BlueprintCallable)
 		void FocusCameraOnEnemy();

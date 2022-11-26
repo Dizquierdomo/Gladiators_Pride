@@ -6,7 +6,6 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "UnrealEngine_5_1_0/Gladiator.h"
-#include "UnrealEngine_5_1_0/AttackInfo.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 // Cross Module References
@@ -18,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AGladiator_NoRegister();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AMinotaur_NoRegister();
 	UNREALENGINE_5_1_0_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
-	UNREALENGINE_5_1_0_API UScriptStruct* Z_Construct_UScriptStruct_FAttackInfo();
 	UPackage* Z_Construct_UPackage__Script_UnrealEngine_5_1_0();
 // End Cross Module References
 	DEFINE_FUNCTION(AGladiator::execGetEnergyRecoveryPerSecond)
@@ -77,7 +75,7 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FAttackInfo*)Z_Param__Result=P_THIS->WeaponAttack();
+		*(float*)Z_Param__Result=P_THIS->WeaponAttack();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AGladiator::execTargetEnemy)
@@ -470,16 +468,16 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 	{
 		struct Gladiator_eventWeaponAttack_Parms
 		{
-			FAttackInfo ReturnValue;
+			float ReturnValue;
 		};
-		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventWeaponAttack_Parms, ReturnValue), Z_Construct_UScriptStruct_FAttackInfo, METADATA_PARAMS(nullptr, 0) }; // 384828676
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(Gladiator_eventWeaponAttack_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGladiator_WeaponAttack_Statics::NewProp_ReturnValue,
 	};
@@ -587,7 +585,7 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		{ &Z_Construct_UFunction_AGladiator_SetEnergyRecoveryPerSecond, "SetEnergyRecoveryPerSecond" }, // 3473871134
 		{ &Z_Construct_UFunction_AGladiator_SetMaxEnergyPoints, "SetMaxEnergyPoints" }, // 3202803108
 		{ &Z_Construct_UFunction_AGladiator_TargetEnemy, "TargetEnemy" }, // 1266959365
-		{ &Z_Construct_UFunction_AGladiator_WeaponAttack, "WeaponAttack" }, // 1857198879
+		{ &Z_Construct_UFunction_AGladiator_WeaponAttack, "WeaponAttack" }, // 1179484655
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGladiator_Statics::Class_MetaDataParams[] = {
@@ -761,9 +759,9 @@ void EmptyLinkFunctionForGeneratedCodeGladiator() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AGladiator, AGladiator::StaticClass, TEXT("AGladiator"), &Z_Registration_Info_UClass_AGladiator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiator), 1037800377U) },
+		{ Z_Construct_UClass_AGladiator, AGladiator::StaticClass, TEXT("AGladiator"), &Z_Registration_Info_UClass_AGladiator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGladiator), 3075100784U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_3585079859(TEXT("/Script/UnrealEngine_5_1_0"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_681895744(TEXT("/Script/UnrealEngine_5_1_0"),
 		Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
