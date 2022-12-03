@@ -4,10 +4,11 @@
 #include "Weapon.h"
 #include "Components/BoxComponent.h"
 #include "Engine/StaticMesh.h"
+#include "Engine/Texture.h"
 
 // Sets default values
 AWeapon::AWeapon() {
-	this->AttackID = -1;
+	this->AttackID = -1;		
 }
 
 // Called when the game starts or when spawned

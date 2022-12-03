@@ -21,6 +21,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	class UAnimSequence* Animation;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UTexture* InventoryImage;
+
 private:
 	UPROPERTY(VisibleAnywhere, Category = "AttackInfo")
 	int AttackID;
