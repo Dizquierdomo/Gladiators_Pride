@@ -30,6 +30,24 @@ class UNREALENGINE_5_1_0_API AGladiator : public AGameCharacter {
 		bool IsWalkingLeft;
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		bool IsJumping;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		int JumpEnergyCost;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+		bool IsBlocking;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+		int BlockEnergyCost;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+		bool IsDodging;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+		int DodgeEnergyCost;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
 		bool IsEnemyTargeted;
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
@@ -38,7 +56,7 @@ class UNREALENGINE_5_1_0_API AGladiator : public AGameCharacter {
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
 		class AMinotaur* Target;	
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target")
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 		class AWeapon* Weapon;
 
 private:		
@@ -49,7 +67,7 @@ private:
 		int EnergyPoints;
 
 		UPROPERTY(VisibleAnywhere, Category = "Stats")
-		float EnergyRecoveryPerSecond;
+		float EnergyRecoveryPerSecond;			
 
 	AGladiator();
 
@@ -70,11 +88,23 @@ private:
 		void RightMove(float Value);
 
 		UFUNCTION(BlueprintCallable)
+		float JumpAction();
+
+		UFUNCTION(BlueprintCallable)
+		float BlockAction();
+
+		UFUNCTION(BlueprintCallable)
+		float DodgeAction();
+
+		UFUNCTION(BlueprintCallable)
 		void SetEnemyInTargetRange(AActor* actor);
 
 		UFUNCTION(BlueprintCallable)
 		void TargetEnemy();
-				
+			
+		UFUNCTION(BlueprintCallable)
+		float WeaponPreparation();
+
 		UFUNCTION(BlueprintCallable)
 		float WeaponAttack();
 

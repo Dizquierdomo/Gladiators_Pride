@@ -17,12 +17,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Weapon_h_12_SPARSE_DATA
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Weapon_h_12_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetAttackID);
+	DECLARE_FUNCTION(execGetAttackID); \
+	DECLARE_FUNCTION(execGenerateAttackID);
 
 
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Weapon_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetAttackID);
+	DECLARE_FUNCTION(execGetAttackID); \
+	DECLARE_FUNCTION(execGenerateAttackID);
 
 
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Weapon_h_12_ACCESSORS

@@ -26,8 +26,12 @@ class AActor;
 	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
 	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
+	DECLARE_FUNCTION(execWeaponPreparation); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \
+	DECLARE_FUNCTION(execDodgeAction); \
+	DECLARE_FUNCTION(execBlockAction); \
+	DECLARE_FUNCTION(execJumpAction); \
 	DECLARE_FUNCTION(execRightMove); \
 	DECLARE_FUNCTION(execForwardMove);
 
@@ -42,8 +46,12 @@ class AActor;
 	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
 	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
+	DECLARE_FUNCTION(execWeaponPreparation); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \
+	DECLARE_FUNCTION(execDodgeAction); \
+	DECLARE_FUNCTION(execBlockAction); \
+	DECLARE_FUNCTION(execJumpAction); \
 	DECLARE_FUNCTION(execRightMove); \
 	DECLARE_FUNCTION(execForwardMove);
 

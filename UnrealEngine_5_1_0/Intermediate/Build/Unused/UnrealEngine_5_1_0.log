@@ -1,30 +1,17 @@
-﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEngine_5_1_0Editor Win64 Development -Project="D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\UnrealEngine_5_1_0.uproject" -WaitMutex -FromMsBuild -Rebuild
+﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEngine_5_1_0Editor Win64 Development -Project="D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\UnrealEngine_5_1_0.uproject" -WaitMutex -FromMsBuild
   Log file: C:\Users\overd\AppData\Local\UnrealBuildTool\Log.txt
-  Cleaning UnrealEngine_5_1_0Editor and UnrealHeaderTool binaries...
-  Unhandled exception: System.AggregateException: One or more errors occurred. (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.pdb (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.pdb - Acceso denegado.
-  Processes with open handles to file:
-    22012: C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\LiveCodingConsole.exe (started 11/25/2022 00:20:50))) (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.dll (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.dll - Acceso denegado.
-  Processes with open handles to file:
-    23820: C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealEditor.exe (started 11/25/2022 00:20:43)))
-   ---> Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.pdb (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.pdb - Acceso denegado.
-  Processes with open handles to file:
-    22012: C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\LiveCodingConsole.exe (started 11/25/2022 00:20:50))
-     --- End of inner exception stack trace ---
-     at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
-     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-  --- End of stack trace from previous location ---
-     at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)
-     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-     at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
-     at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
-     at UnrealBuildTool.CleanMode.<>c__DisplayClass3_0.<Clean>b__2() in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\CleanMode.cs:line 282
-     at System.Threading.Tasks.Task.InnerInvoke()
-     at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
-     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
-  --- End of stack trace from previous location ---
-     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
-     at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
-   ---> (Inner Exception #1) Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.dll (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Binaries\Win64\UnrealEditor-UnrealEngine_5_1_0.dll - Acceso denegado.
-  Processes with open handles to file:
-    23820: C:\Program Files\Epic Games\UE_5.1\Engine\Binaries\Win64\UnrealEditor.exe (started 11/25/2022 00:20:43))<---
-  
+  Using 'git status' to determine working set for adaptive non-unity build (D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride).
+  Building UnrealEngine_5_1_0Editor...
+  Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive Build] Excluded from UnrealEngine_5_1_0 unity file: AttackInfo.cpp, Gladiator.cpp, Weapon.cpp
+  Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
+    Executing up to 4 processes, one per physical core
+  Building 4 actions with 4 processes...
+  [1/4] Compile Weapon.cpp
+  [2/4] Link UnrealEditor-UnrealEngine_5_1_0-0002.lib
+     Creating library D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0-0002.lib and object D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0-0002.exp
+  [3/4] Link UnrealEditor-UnrealEngine_5_1_0-0002.dll
+     Creating library D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0-0002.suppressed.lib and object D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0-0002.suppressed.exp
+  [4/4] WriteMetadata UnrealEngine_5_1_0Editor.target
+  Total time in Parallel executor: 1.96 seconds
+  Total execution time: 3.36 seconds

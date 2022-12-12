@@ -11,10 +11,10 @@ struct FAttackInfo {
 
 public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AtkInfo")
-    float AtkTime;
+    float AttackTime;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AtkInfo")
-    int AtkID;    
+    float PreparationTime;    
 
     FAttackInfo();
 

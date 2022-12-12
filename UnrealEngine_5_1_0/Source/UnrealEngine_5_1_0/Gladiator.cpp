@@ -54,8 +54,10 @@ void AGladiator::ForwardMove(float Value) {
 	if ((Controller != nullptr) && (Value != 0.0f)) {
 		if (Value > 0) {
 			IsWalkingForward = true;
+			IsWalkingBackward = false;
 		} else {
 			IsWalkingBackward = true;
+			IsWalkingForward = false;
 		}		
 
 		// find out which way is forward
@@ -66,15 +68,21 @@ void AGladiator::ForwardMove(float Value) {
 		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
 		AddMovementInput(ForwardDirection, Value, false);
-	} 
+
+	} else {
+		IsWalkingBackward = false;
+		IsWalkingForward = false;
+	}
 }
 
 void AGladiator::RightMove(float Value) {
 	if ((Controller != nullptr) && (Value != 0.0f)) {
 		if (Value > 0) {
 			IsWalkingRight = true;
+			IsWalkingLeft = false;
 		} else {
 			IsWalkingLeft = true;
+			IsWalkingRight = false;
 		}
 
 		// find out which way is forward
@@ -85,7 +93,11 @@ void AGladiator::RightMove(float Value) {
 		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
 		AddMovementInput(RightDirection, Value, false);
-	}
+
+	} else {		
+		IsWalkingRight = false;
+		IsWalkingLeft = false;
+	}	
 }
 
 void AGladiator::SetEnemyInTargetRange(AActor* actor) {
@@ -126,28 +138,6 @@ void AGladiator::FocusCameraOnEnemy() {
 	}
 }
 
-float AGladiator::WeaponAttack() {
-	float aux;
-
-	aux = 0;
-
-	if (Weapon != nullptr) {
-		if ((this->GetEnergyPoints() >= Weapon->EnergyCost) && (Weapon->Animation != nullptr)) {
-			USkeletalMeshComponent* GladiatorMesh = GetMesh();
-
-			SetEnergyPoints((GetEnergyPoints() - Weapon->EnergyCost));
-
-			GladiatorMesh->PlayAnimation(Weapon->Animation, false);
-
-			aux = (Weapon->Animation->GetPlayLength() / Weapon->Animation->RateScale);
-			Weapon->GenerateAttackID();
-		} else {
-			aux = -1;
-		}
-	} 
-	return aux;
-}
-
 void AGladiator::SetMaxEnergyPoints(int value) {
 	if (value < 0) {
 		this->MaxEnergyPoints = 0;
@@ -184,4 +174,75 @@ void AGladiator::SetEnergyRecoveryPerSecond(float value) {
 
 float AGladiator::GetEnergyRecoveryPerSecond() {
 	return this->EnergyRecoveryPerSecond;
+}
+
+float AGladiator::WeaponPreparation() {
+	float aux = 0;
+
+	if (Weapon != nullptr) {
+		if ((this->GetEnergyPoints() >= Weapon->EnergyCost) && (Weapon->AnimationAttack != nullptr) && (Weapon->AnimationPreparation != nullptr)) {
+			USkeletalMeshComponent* GladiatorMesh = GetMesh();
+
+			aux = (Weapon->AnimationPreparation->GetPlayLength() / Weapon->AnimationPreparation->RateScale);
+
+			SetEnergyPoints((GetEnergyPoints() - Weapon->EnergyCost));
+			Weapon->GenerateAttackID();
+			GladiatorMesh->PlayAnimation(Weapon->AnimationPreparation, false);
+		}
+		else {
+			aux = -1;
+		}
+	}
+	return aux;
+}
+
+float AGladiator::WeaponAttack() {
+	float aux = -1;
+
+	if (Weapon != nullptr) {
+		if ((Weapon->AnimationAttack != nullptr) && (Weapon->AnimationPreparation != nullptr)) {
+			USkeletalMeshComponent* GladiatorMesh = GetMesh();
+
+			aux = (Weapon->AnimationAttack->GetPlayLength() / Weapon->AnimationAttack->RateScale);
+
+			GladiatorMesh->PlayAnimation(Weapon->AnimationAttack, false);
+		}
+	}
+	return aux;
+}
+
+float AGladiator::JumpAction() {
+	float aux = 0;
+
+	if (this->GetEnergyPoints() >= this->JumpEnergyCost) {
+		this->SetEnergyPoints((GetEnergyPoints() - this->JumpEnergyCost));
+
+		aux = 1;
+	}	
+
+	return aux;
+}
+
+float AGladiator::BlockAction() {
+	float aux = 0;
+
+	if (this->GetEnergyPoints() >= this->BlockEnergyCost) {
+		this->SetEnergyPoints((GetEnergyPoints() - this->BlockEnergyCost));
+
+		aux = 1;
+	}
+
+	return aux;
+}
+
+float AGladiator::DodgeAction() {
+	float aux = 0;
+
+	if (this->GetEnergyPoints() >= this->DodgeEnergyCost) {
+		this->SetEnergyPoints((GetEnergyPoints() - this->DodgeEnergyCost));
+
+		aux = 1;
+	}
+
+	return aux;
 }

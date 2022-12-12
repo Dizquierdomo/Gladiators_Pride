@@ -19,7 +19,16 @@ public:
 	int EnergyCost;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UAnimSequence* Animation;
+	class UStaticMeshComponent* WeaponMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UBoxComponent* WeaponCollision;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UAnimSequence* AnimationAttack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UAnimSequence* AnimationPreparation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
 	class UTexture* InventoryImage;
@@ -39,7 +48,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-		
+	
+	UFUNCTION(BlueprintCallable)
 	int GenerateAttackID();
 
 	UFUNCTION(BlueprintCallable)
