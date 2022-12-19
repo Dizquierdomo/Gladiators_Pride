@@ -67,7 +67,13 @@ private:
 		int EnergyPoints;
 
 		UPROPERTY(VisibleAnywhere, Category = "Stats")
-		float EnergyRecoveryPerSecond;			
+		float EnergyRecoveryPerSecond;	
+
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
+		int MaxSkillPoints;
+
+		UPROPERTY(VisibleAnywhere, Category = "Stats")
+		int SkillPoints;
 
 	AGladiator();
 
@@ -128,4 +134,16 @@ private:
 
 		UFUNCTION(BlueprintCallable)
 		float GetEnergyRecoveryPerSecond();
+
+		UFUNCTION(BlueprintCallable)
+		void SetMaxSkillPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetMaxSkillPoints();
+
+		UFUNCTION(BlueprintCallable)
+		void SetSkillPoints(int value);
+
+		UFUNCTION(BlueprintCallable)
+		int GetSkillPoints();
 };

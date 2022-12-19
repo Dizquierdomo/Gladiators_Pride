@@ -18,6 +18,10 @@ class AActor;
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_SPARSE_DATA
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetSkillPoints); \
+	DECLARE_FUNCTION(execSetSkillPoints); \
+	DECLARE_FUNCTION(execGetMaxSkillPoints); \
+	DECLARE_FUNCTION(execSetMaxSkillPoints); \
 	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
 	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
 	DECLARE_FUNCTION(execGetEnergyPoints); \
@@ -38,6 +42,10 @@ class AActor;
 
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetSkillPoints); \
+	DECLARE_FUNCTION(execSetSkillPoints); \
+	DECLARE_FUNCTION(execGetMaxSkillPoints); \
+	DECLARE_FUNCTION(execSetMaxSkillPoints); \
 	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
 	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
 	DECLARE_FUNCTION(execGetEnergyPoints); \

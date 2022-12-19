@@ -5,6 +5,8 @@
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/Texture.h"
+#include "Gladiator.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AWeapon::AWeapon() {
@@ -15,13 +17,13 @@ AWeapon::AWeapon() {
 
 	this->WeaponCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Weapon_Collision"));
 	this->WeaponCollision->ComponentTags.Add(FName("player.weapon"));
-	this->WeaponCollision->AttachToComponent(RootComponent, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false));
+	this->WeaponCollision->AttachToComponent(RootComponent, FAttachmentTransformRules(EAttachmentRule::KeepRelative, false));
 }
 
 // Called when the game starts or when spawned
 void AWeapon::BeginPlay()
 {
-	Super::BeginPlay();	
+	Super::BeginPlay();
 }
 
 // Called every frame

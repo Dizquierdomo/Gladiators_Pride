@@ -14,7 +14,6 @@
 #include "Weapon.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/PlayerController.h"
-#include "AttackInfo.h"
 
 // Sets default values
 AGladiator::AGladiator() {
@@ -34,6 +33,8 @@ AGladiator::AGladiator() {
 	SetMaxEnergyPoints(100);
 	SetEnergyPoints(100);
 	SetEnergyRecoveryPerSecond(5);
+
+	SetMaxSkillPoints(3);
 
 	IsEnemyTargeted = false;
 }
@@ -174,6 +175,32 @@ void AGladiator::SetEnergyRecoveryPerSecond(float value) {
 
 float AGladiator::GetEnergyRecoveryPerSecond() {
 	return this->EnergyRecoveryPerSecond;
+}
+
+void AGladiator::SetMaxSkillPoints(int value) {
+	if (value < 0) {
+		this->MaxSkillPoints = 0;
+	} else {
+		this->MaxSkillPoints = value;
+	}
+}
+
+int AGladiator::GetMaxSkillPoints() {
+	return this->MaxSkillPoints;
+}
+
+void AGladiator::SetSkillPoints(int value) {
+	if (value < 0) {
+		this->SkillPoints = 0;
+	} else if (value > GetMaxSkillPoints()) {
+		this->SkillPoints = GetMaxSkillPoints();
+	} else {
+		this->SkillPoints = value;
+	}
+}
+
+int AGladiator::GetSkillPoints() {
+	return this->SkillPoints;
 }
 
 float AGladiator::WeaponPreparation() {
