@@ -1,39 +1,20 @@
 ﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEngine_5_1_0Editor Win64 Development -Project="D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\UnrealEngine_5_1_0.uproject" -WaitMutex -FromMsBuild -Rebuild
   Log file: C:\Users\overd\AppData\Local\UnrealBuildTool\Log.txt
   Cleaning UnrealEngine_5_1_0Editor and UnrealHeaderTool binaries...
-  Using 'git status' to determine working set for adaptive non-unity build (D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride).
-  Creating makefile for UnrealEngine_5_1_0Editor (no existing makefile)
-  Parsing headers for UnrealEngine_5_1_0Editor
-    Running Internal UnrealHeaderTool D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\UnrealEngine_5_1_0.uproject D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEngine_5_1_0Editor\Development\UnrealEngine_5_1_0Editor.uhtmanifest -WarningsAsErrors -installed
-  Total of 14 written
-  Reflection code generated for UnrealEngine_5_1_0Editor in 1.8982344 seconds
-  Building UnrealEngine_5_1_0Editor...
-  Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from UnrealEngine_5_1_0 unity file: Gladiator.cpp, GladiatorController.cpp, GladiatorSword.cpp, Minotaur.cpp, UnrealEngine_5_1_0GameModeBase.cpp, Weapon.cpp
-  Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
-    Executing up to 4 processes, one per physical core
-    Requested 1.5 GB free memory per action, 4.3 GB available: limiting max parallel actions to 2
-  Building 19 actions with 2 processes...
-  [1/19] Resource Default.rc2
-  [2/19] Compile SharedPCH.Engine.ShadowErrors.cpp
-  [3/19] Compile GladiatorSword.gen.cpp
-  [4/19] Compile Weapon.cpp
-  [5/19] Compile UnrealEngine_5_1_0.cpp
-  [6/19] Compile GladiatorSword.cpp
-  [7/19] Compile Gladiator.cpp
-  [8/19] Compile UnrealEngine_5_1_0.init.gen.cpp
-  [9/19] Compile Weapon.gen.cpp
-  [10/19] Compile GladiatorController.gen.cpp
-  [11/19] Compile GladiatorController.cpp
-  [12/19] Compile UnrealEngine_5_1_0GameModeBase.cpp
-  [13/19] Compile UnrealEngine_5_1_0GameModeBase.gen.cpp
-  [14/19] Compile Minotaur.cpp
-  [15/19] Compile Gladiator.gen.cpp
-  [16/19] Compile Minotaur.gen.cpp
-  [17/19] Link UnrealEditor-UnrealEngine_5_1_0.lib
-     Creating library D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0.lib and object D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0.exp
-  [18/19] Link UnrealEditor-UnrealEngine_5_1_0.dll
-     Creating library D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0.suppressed.lib and object D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEngine_5_1_0\UnrealEditor-UnrealEngine_5_1_0.suppressed.exp
-  [19/19] WriteMetadata UnrealEngine_5_1_0Editor.target
-  Total time in Parallel executor: 86.84 seconds
-  Total execution time: 92.62 seconds
+  Unhandled exception: System.AggregateException: One or more errors occurred. (Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEngine_5_1_0Editor\Development (Unable to delete \\?\D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEngine_5_1_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h - El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso.))
+   ---> Unable to delete D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEngine_5_1_0Editor\Development (Unable to delete \\?\D:\UOC-Grado_Ingenieria_Informatica\Semestre_09\TFG\Gladiators_Pride\UnrealEngine_5_1_0\Intermediate\Build\Win64\UnrealEngine_5_1_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h - El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso.)
+     --- End of inner exception stack trace ---
+     at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+  --- End of stack trace from previous location ---
+     at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)
+     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+     at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+     at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+     at UnrealBuildTool.CleanMode.<>c__DisplayClass3_0.<Clean>b__1() in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\CleanMode.cs:line 259
+     at System.Threading.Tasks.Task.InnerInvoke()
+     at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+  --- End of stack trace from previous location ---
+     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+     at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)

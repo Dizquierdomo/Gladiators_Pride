@@ -23,7 +23,7 @@ private: \
 	static void StaticRegisterNativesAMinotaur(); \
 	friend struct Z_Construct_UClass_AMinotaur_Statics; \
 public: \
-	DECLARE_CLASS(AMinotaur, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AMinotaur, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AMinotaur)
 
 
@@ -32,7 +32,7 @@ private: \
 	static void StaticRegisterNativesAMinotaur(); \
 	friend struct Z_Construct_UClass_AMinotaur_Statics; \
 public: \
-	DECLARE_CLASS(AMinotaur, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AMinotaur, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AMinotaur)
 
 

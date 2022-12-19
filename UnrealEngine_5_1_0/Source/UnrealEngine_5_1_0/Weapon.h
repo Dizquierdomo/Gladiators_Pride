@@ -19,19 +19,28 @@ public:
 	int EnergyCost;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UAnimSequence* Animation;
-/*
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UStaticMesh* Mesh;
+	class UStaticMeshComponent* WeaponMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	class UBoxComponent* Collision;
-*/
+	class UBoxComponent* WeaponCollision;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UAnimSequence* AnimationAttack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UAnimSequence* AnimationPreparation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	class UTexture* InventoryImage;
+
+private:
+	UPROPERTY(VisibleAnywhere, Category = "AttackInfo")
+	int AttackID;
+
 public:	
 	// Sets default values for this actor's properties
 	AWeapon();
-	//AWeapon(int AtkValue, int EnergyCost, class UAnimSequence* Animation, class UStaticMesh* Mesh, class UBoxComponent* Collision);
-
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -39,5 +48,10 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	UFUNCTION(BlueprintCallable)
+	int GenerateAttackID();
 
+	UFUNCTION(BlueprintCallable)
+	int GetAttackID();
 };

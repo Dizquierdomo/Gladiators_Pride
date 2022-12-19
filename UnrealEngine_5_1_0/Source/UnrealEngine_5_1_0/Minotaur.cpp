@@ -9,6 +9,9 @@ AMinotaur::AMinotaur()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	SetMaxHealthPoints(1000);
+	SetHealthPoints(GetMaxHealthPoints());
+	SetCharacterName("Minotaur Champion");
 }
 
 // Called when the game starts or when spawned

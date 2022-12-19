@@ -18,18 +18,48 @@ class AActor;
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_SPARSE_DATA
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetSkillPoints); \
+	DECLARE_FUNCTION(execSetSkillPoints); \
+	DECLARE_FUNCTION(execGetMaxSkillPoints); \
+	DECLARE_FUNCTION(execSetMaxSkillPoints); \
+	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execGetEnergyPoints); \
+	DECLARE_FUNCTION(execSetEnergyPoints); \
+	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
+	DECLARE_FUNCTION(execWeaponPreparation); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \
+	DECLARE_FUNCTION(execDodgeAction); \
+	DECLARE_FUNCTION(execBlockAction); \
+	DECLARE_FUNCTION(execJumpAction); \
 	DECLARE_FUNCTION(execRightMove); \
 	DECLARE_FUNCTION(execForwardMove);
 
 
 #define FID_UnrealEngine_5_1_0_Source_UnrealEngine_5_1_0_Gladiator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetSkillPoints); \
+	DECLARE_FUNCTION(execSetSkillPoints); \
+	DECLARE_FUNCTION(execGetMaxSkillPoints); \
+	DECLARE_FUNCTION(execSetMaxSkillPoints); \
+	DECLARE_FUNCTION(execGetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execSetEnergyRecoveryPerSecond); \
+	DECLARE_FUNCTION(execGetEnergyPoints); \
+	DECLARE_FUNCTION(execSetEnergyPoints); \
+	DECLARE_FUNCTION(execGetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execSetMaxEnergyPoints); \
+	DECLARE_FUNCTION(execFocusCameraOnEnemy); \
 	DECLARE_FUNCTION(execWeaponAttack); \
+	DECLARE_FUNCTION(execWeaponPreparation); \
 	DECLARE_FUNCTION(execTargetEnemy); \
 	DECLARE_FUNCTION(execSetEnemyInTargetRange); \
+	DECLARE_FUNCTION(execDodgeAction); \
+	DECLARE_FUNCTION(execBlockAction); \
+	DECLARE_FUNCTION(execJumpAction); \
 	DECLARE_FUNCTION(execRightMove); \
 	DECLARE_FUNCTION(execForwardMove);
 
@@ -40,7 +70,7 @@ private: \
 	static void StaticRegisterNativesAGladiator(); \
 	friend struct Z_Construct_UClass_AGladiator_Statics; \
 public: \
-	DECLARE_CLASS(AGladiator, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AGladiator, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AGladiator)
 
 
@@ -49,7 +79,7 @@ private: \
 	static void StaticRegisterNativesAGladiator(); \
 	friend struct Z_Construct_UClass_AGladiator_Statics; \
 public: \
-	DECLARE_CLASS(AGladiator, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
+	DECLARE_CLASS(AGladiator, AGameCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/UnrealEngine_5_1_0"), NO_API) \
 	DECLARE_SERIALIZER(AGladiator)
 
 

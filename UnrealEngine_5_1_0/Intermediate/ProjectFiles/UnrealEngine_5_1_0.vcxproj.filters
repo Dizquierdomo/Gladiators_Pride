@@ -11,6 +11,7 @@
     <None Include="..\..\Source\UnrealEngine_5_1_0Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -42,6 +43,12 @@
     <Filter Include="Source\UnrealEngine_5_1_0">
       <UniqueIdentifier>{F1DAC8F3-890C-3B80-B9EA-3E3EB26AC754}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\GameCharacter.cpp">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GameCharacter.h">
+      <Filter>Source\UnrealEngine_5_1_0</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Gladiator.cpp">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClCompile>
@@ -52,12 +59,6 @@
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorController.h">
-      <Filter>Source\UnrealEngine_5_1_0</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.cpp">
-      <Filter>Source\UnrealEngine_5_1_0</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\UnrealEngine_5_1_0\GladiatorSword.h">
       <Filter>Source\UnrealEngine_5_1_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\UnrealEngine_5_1_0\Minotaur.cpp">
