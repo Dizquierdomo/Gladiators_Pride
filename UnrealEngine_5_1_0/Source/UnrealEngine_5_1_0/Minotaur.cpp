@@ -11,7 +11,7 @@ AMinotaur::AMinotaur()
 
 	SetMaxHealthPoints(1000);
 	SetHealthPoints(GetMaxHealthPoints());
-	SetCharacterName("Minotaur Champion");
+	SetCharacterName("Arena Champion");
 }
 
 // Called when the game starts or when spawned
